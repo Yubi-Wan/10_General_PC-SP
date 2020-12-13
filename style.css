@@ -706,8 +706,38 @@ PC：fooder
 .footer_area1{
   display: flex;
   justify-content: center;
+  margin: 70px 0 0 0;
 }
 
+.footer_left{
+  width: 490px;
+}
+
+.footer_middle{
+  width: 410px;
+}
+
+.footer_right{
+  width: 290px;
+}
+
+.footer_card{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px 0;
+}
+
+.h4_txt1{
+  font-family: Montserrat;
+  font-size: 42px;
+  margin: 0 0 35px 0;
+}
+
+.h4_txt2{
+  font-family: Montserrat;
+  font-size: 42px;
+  margin: 0 0 35px 0;
+}
 
 
 }
