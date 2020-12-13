@@ -132,6 +132,9 @@ PC：main：イメージ
   align-items: center;
 }
 
+/* ================================================
+PC：main：イメージ：ヘッダー
+================================================ */
 .main_header{
   display: flex;
   justify-content: space-around;
@@ -162,9 +165,16 @@ PC：main：イメージ
   font-size: 14px;
 }
 
+.main_header li i{
+  color: #ffffff;
+}
+
+/* ================================================
+PC：main：イメージ：テキスト
+================================================ */
 .main_image_txt{
   position: absolute;
-  top: 41%;
+  top: 34%;
 }
 
 .main_image_txt{
@@ -195,6 +205,48 @@ PC：main：イメージ
   font-family: Montserrat ;
   font-size: 14px;
   color: #ffffff;
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 117px;
+  padding: 5px 0 5px 0;
+  margin: 60px auto 0 auto;
+}
+
+.main_image_txt a{
+text-decoration: none;
+}
+
+.main_image_bottom{
+  position: absolute;
+  top: 93%;
+}
+
+.main_image_bottom ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.main_image_bottom li{
+  font-family: Montserrat;
+  font-size: 14px;
+  width: 285px;
+  border-top: 2px solid #ffffff;
+  padding: 17px 0 0 0;
+  margin: 0 0 0 25px;
+}
+
+.main_image_bottom a{
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Montserrat ;
+  font-size: 15px;
+  width: 100%;
+  height: 30px;
 }
 
 
@@ -226,14 +278,21 @@ PC：main：about
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 80px 0 0 0;
+  margin: 0px 0 0 0;
   font-size: 14px;
+}
+
+.about_txt img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px auto 35px auto;
 }
 
 .about_images{
   display: flex;
   justify-content: center;
-  margin: 100px 0px 0 0px;
+  margin: 80px 0px 0 0px;
 }
 
 .about_images img{
@@ -301,10 +360,17 @@ PC：main：SERVICE
   margin: 20px 0 0 0;
 }
 
+.service_txt img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px auto 35px auto;
+}
+
 .service_area1{
   display: flex;
   justify-content: space-evenly;
-  margin: 100px 0 50px 0;
+  margin: 70px 0 50px 0;
 }
 
 .service_area2{
@@ -346,7 +412,7 @@ PC：main：デザイン
 
 .design_txt{
   position: absolute;
-  top: 0%;
+  top: -5%;
 }
 
 .design_txt p{
@@ -367,6 +433,13 @@ PC：main：デザイン
   font-size: 30px;
   color: #333333;
   margin: 20px 0 0 0;
+}
+
+.design_txt img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px auto 35px auto;
 }
 
 /* ================================================
@@ -397,15 +470,22 @@ PC：main：WHAT WE DO
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 80px 0 0 0;
+  margin: 50px 0 0 0;
   font-size: 14px;
+}
+
+.whatwedo img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px auto 35px auto;
 }
 
 .whatwedo_area1{
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 90px 0 0 0;
+  margin: 60px 0 0 0;
 }
 
 .whatwedo_area1_right{
@@ -469,8 +549,15 @@ PC：main：チーム
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 80px 0 0 0;
+  margin: 50px 0 0 0;
   font-size: 14px;
+}
+
+.team img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px auto 35px auto;
 }
 
 .team_area{
@@ -537,14 +624,22 @@ PC：main：ワーク
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 80px 0 0 0;
+  margin: 50px 0 70px 0;
   font-size: 14px;
+}
+
+.work img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto 0px auto;
 }
 
 .work_area1{
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  align-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -597,9 +692,16 @@ PC：main：ピープル
   margin: 20px 0 0 0;
 }
 
+.people_tittle img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px auto 35px auto;
+}
+
 .people_area{
   position: absolute;
-  top: 45%;
+  top: 40%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -608,7 +710,16 @@ PC：main：ピープル
 .people_card{
   display: flex;
   justify-content: center;
-  width: 580px;
+  width: 550px;
+  margin: 0px 20px 70px 20px;
+}
+
+.people_txt{
+  margin: 0px 0px 0px 20px;
+}
+
+.people_txt img{
+  margin: 15px 0px 15px 0px;
 }
 
 /* ================================================
@@ -634,6 +745,13 @@ PC：main：ブログ
   margin: 20px 0 0 0;
 }
 
+.blog img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px auto 35px auto;
+}
+
 .blog_area{
   display: flex;
   justify-content: center;
@@ -643,7 +761,7 @@ a.blog_card{
   text-decoration: none;
   width: 390px;
   height: auto;
-  margin: 90px 20px 0 20px;
+  margin: 50px 20px 0 20px;
 }
 
 .blog_card p.txt1{
@@ -706,37 +824,112 @@ PC：fooder
 .footer_area1{
   display: flex;
   justify-content: center;
-  margin: 70px 0 0 0;
+  margin: 70px 10% 35px 10%;
 }
 
+/* ================================================
+PC：fooder：左側
+================================================ */
 .footer_left{
   width: 490px;
+  margin: 0 10px 0px 10px;
 }
 
+.p_txt2 span{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer_left_txt{
+  margin: 30px 0 0 0;
+}
+
+.footer_left_sns{
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px 0 0 0;
+}
+
+.footer_left_sns img{
+  margin: 0px 0 0 20px;
+}
+
+.footer_left_serch{
+  margin: 30px 0 0 0;
+}
+
+/* ================================================
+PC：fooder：真ん中
+================================================ */
 .footer_middle{
   width: 410px;
+  margin: 0 10px 0px 10px;
 }
 
+.footer_card_txt{
+  margin: 0 0px 0px 10px;
+}
+
+.footer_card_txt p.txt2{
+  font-size: 14px;
+  margin: 10px 0 0 0px;
+}
+
+/* ================================================
+PC：fooder：右側
+================================================ */
 .footer_right{
   width: 290px;
+  margin: 0 10px 0px 10px;
+}
+
+.footer_right p{
+  font-size: 14px;
+  margin: 10px 0px 0px 0px;
+}
+
+.footer_right a{
+  text-decoration: none;
 }
 
 .footer_card{
   display: flex;
   justify-content: center;
-  margin: 0 0 30px 0;
+  align-items: center;
+  margin: 0 0px 30px 0px;
+}
+
+a.footer_card{
+  text-decoration: none;
 }
 
 .h4_txt1{
   font-family: Montserrat;
   font-size: 42px;
-  margin: 0 0 35px 0;
+  margin: 0 0 25px 0;
 }
 
 .h4_txt2{
   font-family: Montserrat;
-  font-size: 42px;
+  font-size: 14px;
   margin: 0 0 35px 0;
+}
+
+/* ================================================
+PC：fooder：下部
+================================================ */
+.footer_area2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  border-top: 1px solid #999999;;
+  margin: 0px 10%;
+}
+
+.footer_area2 span{
+  color: #f38181;
 }
 
 
