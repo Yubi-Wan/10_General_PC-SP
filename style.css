@@ -1,0 +1,735 @@
+/* ================================================
+リセットcss：HTML5 Doctor CSS Reset 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+================================================ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  font-family: Roboto;
+  color: #999999;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+/* ================================================
+ここからPCのCSS
+================================================ */
+
+@media only screen and (min-device-width: 481px) {
+
+/* ================================================
+PC：header 
+================================================ */
+
+/* ================================================
+PC：main：イメージ
+================================================ */
+.main_image{
+  background-image: url(images/main_image.png);
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  height: 0px;
+  padding-top: 52.1%;
+  background-size: 100%;
+  z-index: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 3%;
+}
+
+.main_header h1{
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 30px;
+}
+
+.main_header ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 45%;
+}
+
+.main_header li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+}
+
+.main_image_txt{
+  position: absolute;
+  top: 41%;
+}
+
+.main_image_txt{
+  position: absolute;
+  top: 21%;
+}
+
+.main_image_txt p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_image_txt p.txt1{
+  font-family: P22 Pooper Black Pro ;
+  font-size: 72px;
+  color: #ffffff;
+}
+
+.main_image_txt h2{
+  text-align: center;
+  font-size: 150px;
+  color: #ffffff;
+  margin: 50px 0 0 0;
+}
+
+.main_image_txt p.txt2{
+  font-family: Montserrat ;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+
+/* ================================================
+PC：main：about
+================================================ */
+.about p.txt1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: P22 Pooper Black Pro ;
+  font-size: 24px;
+  color: #333333;
+  margin: 90px 0 0 0;
+}
+
+.about h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  color: #333333;
+  margin: 20px 0 0 0;
+}
+
+.about p.txt2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 80px 0 0 0;
+  font-size: 14px;
+}
+
+.about_images{
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px 0 0px;
+}
+
+.about_images img{
+  margin: 0px 15px 0 15px;
+}
+
+.about_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 110px 0 0 0;
+  width: 100%;
+  height: 270px;
+  background-color: #95e1d3;
+}
+
+.about_btn a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 240px;
+  height: 100%;
+  border-left: 1px solid #ffffff;
+}
+
+.about_btn p.txt1{
+  font-size: 72px;
+  font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.about_btn p.txt2{
+  font-size: 14px;
+  font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  margin: 30px 0 0 0;
+}
+
+/* ================================================
+PC：main：SERVICE
+================================================ */
+.service_txt p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: P22 Pooper Black Pro ;
+  font-size: 24px;
+  color: #333333;
+  margin: 90px 0 0 0;
+}
+
+.service_txt h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  color: #333333;
+  margin: 20px 0 0 0;
+}
+
+.service_area1{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 0 50px 0;
+}
+
+.service_area2{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0 100px 0;
+}
+
+.service_menu{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 400px;
+}
+
+.service_menu_txt{
+  margin: 0 0 0 20px;
+}
+
+.service_menu_txt p{
+  margin: 10px 0 0 0px;
+}
+
+
+/* ================================================
+PC：main：デザイン
+================================================ */
+.design{
+  background-image: url(images/design.png);
+  width: 100%;
+  height: 0px;
+  padding-top: 49%;
+  background-size: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.design_txt{
+  position: absolute;
+  top: 0%;
+}
+
+.design_txt p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: P22 Pooper Black Pro ;
+  font-size: 24px;
+  color: #333333;
+  margin: 90px 0 0 0;
+}
+
+.design_txt h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  color: #333333;
+  margin: 20px 0 0 0;
+}
+
+/* ================================================
+PC：main：WHAT WE DO
+================================================ */
+.whatwedo p.txt1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: P22 Pooper Black Pro ;
+  font-size: 24px;
+  color: #333333;
+  margin: 90px 0 0 0;
+}
+
+.whatwedo h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  color: #333333;
+  margin: 20px 0 0 0;
+}
+
+.whatwedo p.txt2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 80px 0 0 0;
+  font-size: 14px;
+}
+
+.whatwedo_area1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 90px 0 0 0;
+}
+
+.whatwedo_area1_right{
+  width: 600px;
+  margin: 0 0 0 30px;
+}
+
+.whatwedo_area2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0 0 0;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 290px;
+}
+
+.whatwedo_area2 img{
+  width: 155px;
+  height: 155px;
+}
+
+.whatwedo_area2_right{
+  width: 750px;
+  margin: 0 0 0 20px;
+}
+
+.whatwedo_area2_right p.txt1{
+  font-size: 24px;
+}
+
+/* ================================================
+PC：main：チーム
+================================================ */
+.team{
+  width: 100%;
+}
+
+.team p.txt1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: P22 Pooper Black Pro ;
+  font-size: 24px;
+  color: #333333;
+  margin: 90px 0 0 0;
+}
+
+.team h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  color: #333333;
+  margin: 20px 0 0 0;
+}
+
+.team p.txt2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 80px 0 0 0;
+  font-size: 14px;
+}
+
+.team_area{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 90px 0 0 0;
+}
+
+.team_img p.txt3{
+  font-family: Montserrat;
+  color: #333333;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0 0 0;
+}
+
+.team_img p.txt4{
+  font-family: Montserrat;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 13px 0 0 0;
+}
+
+.team_logos{
+  width: 100%;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0 0 0;
+  background-color: #f8f8f8;
+}
+
+/* ================================================
+PC：main：ワーク
+================================================ */
+.work p.txt1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: P22 Pooper Black Pro ;
+  font-size: 24px;
+  color: #333333;
+  margin: 90px 0 0 0;
+}
+
+.work h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  color: #333333;
+  margin: 20px 0 0 0;
+}
+
+.work p.txt2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 80px 0 0 0;
+  font-size: 14px;
+}
+
+.work_area1{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.work_area2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================================================
+PC：main：ピープル
+================================================ */
+.people{
+  background-image: url(images/people_img.png);
+  width: 100%;
+  height: 0px;
+  padding-top: 43.2%;
+  background-size: 100%;
+  position: relative;
+}
+
+.people_tittle_area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.people_tittle{
+  position: absolute;
+  top: 0%;
+}
+
+.people_tittle p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: P22 Pooper Black Pro ;
+  font-size: 24px;
+  color: #333333;
+  margin: 90px 0 0 0;
+}
+
+.people_tittle h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  color: #333333;
+  margin: 20px 0 0 0;
+}
+
+.people_area{
+  position: absolute;
+  top: 45%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.people_card{
+  display: flex;
+  justify-content: center;
+  width: 580px;
+}
+
+/* ================================================
+PC：main：ブログ
+================================================ */
+.blog p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: P22 Pooper Black Pro ;
+  font-size: 24px;
+  color: #333333;
+  margin: 90px 0 0 0;
+}
+
+.blog h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  color: #333333;
+  margin: 20px 0 0 0;
+}
+
+.blog_area{
+  display: flex;
+  justify-content: center;
+}
+
+a.blog_card{
+  text-decoration: none;
+  width: 390px;
+  height: auto;
+  margin: 90px 20px 0 20px;
+}
+
+.blog_card p.txt1{
+  font-family: Montserrat;
+  font-size: 16px;
+  color: #333333;
+  margin: 15px 0 0 15px;
+}
+
+.blog_card p.txt2{
+  font-family: Montserrat;
+  font-size: 14px;
+  margin: 15px 0 15px 15px;
+}
+
+.blog_card img.img2{
+  padding: 15px 0px 0 15px;
+}
+
+/* ================================================
+PC：main：マップ
+================================================ */
+
+.map{
+  background-image: url(images/map_img.png);
+  width: 100%;
+  height: 0px;
+  padding-top: 10.4%;
+  background-size: 100%;
+  position: relative;
+  margin: 110px 0 0 0;
+}
+
+.map_txt_area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map_txt{
+  position: absolute;
+  top: 40%;
+}
+
+.map_txt i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map_txt p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================================================
+PC：fooder 
+================================================ */
+.footer_area1{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+}
+
+/* ================================================
+ここからスマホののCSS
+================================================ */
+
+@media only screen and (max-device-width: 480px) {
+
+/* ================================================
+SP：header 
+================================================ */
+
+
+/* ================================================
+SP：main
+================================================ */
+
+
+/* ================================================
+SP：fooder 
+================================================ */
+
+}
