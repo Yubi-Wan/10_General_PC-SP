@@ -29,6 +29,7 @@ time, mark, audio, video {
   font-family: Montserrat;
   color: #999999;
   vertical-align: middle;
+  line-height: 126%
 }
 
 body {
@@ -108,9 +109,7 @@ input, select {
 /* ================================================
 ここからPCのCSS
 ================================================ */
-
 @media only screen and (min-device-width: 769px) {
-
 /* ================================================
 PC：header 
 ================================================ */
@@ -193,11 +192,6 @@ PC：main：イメージ：テキスト
 ================================================ */
 .main_image_txt{
   position: absolute;
-  top: 34%;
-}
-
-.main_image_txt{
-  position: absolute;
   top: 21%;
 }
 
@@ -218,6 +212,7 @@ PC：main：イメージ：テキスト
   font-size: 150px;
   color: #ffffff;
   margin: 50px 0 0 0;
+  line-height: 95%
 }
 
 .main_image_txt p.txt2{
@@ -229,7 +224,7 @@ PC：main：イメージ：テキスト
   align-items: center;
   width: 117px;
   padding: 5px 0 5px 0;
-  margin: 60px auto 0 auto;
+  margin: 30px auto 0 auto;
 }
 
 .main_image_txt a{
@@ -688,8 +683,16 @@ PC：main：ワーク
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  align-content: flex-start;
   flex-wrap: wrap;
+}
+
+.work_area1_img{
+  display: flex;
+  flex-direction: column;
+}
+
+.work_area1_img img{
+  width: 350px;
 }
 
 .work_area2{
@@ -785,6 +788,12 @@ PC：main：ピープル
   width: 550px;
   margin: 0px 20px 70px 20px;
 }
+
+.people_card img.people_img{
+  width: 17%;
+  height: 73%;
+}
+
 
 a.people_card{
   text-decoration: none;
@@ -1034,7 +1043,6 @@ PC：fooder：下部
   color: #f38181;
 }
 
-
 }
 
 /* ================================================
@@ -1084,7 +1092,7 @@ SP：main：イメージ：ヘッダー
 
 .main_header_sp h1{
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .main_header_sp a{
@@ -1104,7 +1112,7 @@ SP：main：イメージ：テキスト
 ================================================ */
 .main_image_txt_sp{
   position: absolute;
-  top: 25%;
+  top: 32%;
 }
 
 .main_image_txt_sp p{
@@ -1112,20 +1120,24 @@ SP：main：イメージ：テキスト
   justify-content: center;
   align-items: center;
   font-family: P22 Pooper Black Pro ;
-  font-size: 30px;
+  font-size: 29px;
   color: #ffffff;
 }
 
 .main_image_txt_sp h2{
   text-align: center;
-  font-size: 40px;
+  font-size: 36px;
   color: #ffffff;
-  margin: 10px 0 0 0;
+  line-height: 100%;
+  margin: 0px 0 0 0;
 }
 
 /* ================================================
 SP：main：about
 ================================================ */
+.about{
+  width: 100%;
+}
 
 .about p.txt1{
   display: flex;
@@ -1153,6 +1165,9 @@ SP：main：about
   text-align: center;
   margin: 0px 0 0 0;
   font-size: 14px;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .about_txt img{
@@ -1167,10 +1182,14 @@ SP：main：about
   justify-content: center;
   flex-wrap: wrap;
   margin: 30px 0px 0 0px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .about_images img{
-  margin: 0px 15px 30px 15px;
+  padding: 0px 25px 30px 25px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .about_btn{
@@ -1243,21 +1262,24 @@ SP：main：SERVICE
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 70px 0 50px 0;
+  margin: 40px 0 0px 0;
 }
 
 .service_area2{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 50px 0 100px 0;
+  margin: 0px 0 100px 0;
 }
 
 .service_menu{
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
-  width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  border-bottom: solid 1px #999999;
 }
 
 .service_menu_txt{
@@ -1269,9 +1291,12 @@ SP：main：SERVICE
 }
 
 .service_menu_txt p{
-  margin: 10px 0 0 0px;
+  font-size: 14px;
 }
 
+a.service_menu{
+  text-decoration: none;
+}
 
 /* ================================================
 SP：main：デザイン
@@ -1286,11 +1311,12 @@ SP：main：デザイン
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 210px 0 0 0;
 }
 
 .design_txt{
   position: absolute;
-  top: -5%;
+  top: -160%;
 }
 
 .design_txt p{
@@ -1329,7 +1355,7 @@ SP：main：WHAT WE DO
   font-family: P22 Pooper Black Pro ;
   font-size: 24px;
   color: #333333;
-  margin: 90px 0 0 0;
+  margin: 45px 0 0 0;
 }
 
 .whatwedo h3{
@@ -1348,6 +1374,9 @@ SP：main：WHAT WE DO
   text-align: center;
   margin: 50px 0 0 0;
   font-size: 14px;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .whatwedo img{
@@ -1358,7 +1387,6 @@ SP：main：WHAT WE DO
 }
 
 .whatwedo_area1{
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
@@ -1370,21 +1398,22 @@ SP：main：WHAT WE DO
 }
 
 .whatwedo_area1_right{
-  width: 100%;
-  margin: 0 0 0 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: none;
 }
 
 .whatwedo_area2{
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 120px 0 0 0;
+  align-items: flex-start;
+  margin: 50px 0 0 0;
   background-color: #f8f8f8;
   width: 100%;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.whatwedo_area2 img{
+  width: 55px;
 }
 
 .whatwedo_area2_right{
@@ -1394,14 +1423,14 @@ SP：main：WHAT WE DO
 }
 
 .whatwedo_area2_right p.txt1{
-  font-size: 24px;
+  font-size: 13px;
 }
 
 .whatwedo_area2_right_bottom{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 23px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .whatwedo_area2_right_bottom p{
@@ -1426,7 +1455,7 @@ SP：main：チーム
   font-family: P22 Pooper Black Pro ;
   font-size: 24px;
   color: #333333;
-  margin: 90px 0 0 0;
+  margin: 56px 0 0 0;
 }
 
 .team h3{
@@ -1459,7 +1488,17 @@ SP：main：チーム
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 90px 0 0 0;
+  margin: 30px 0 0 0;
+}
+
+a.team_img{
+  text-decoration: none;
+}
+
+.team_img img{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 .team_img p.txt3{
@@ -1497,18 +1536,13 @@ SP：main：ワーク
 }
 
 .work h3{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   font-size: 30px;
   color: #333333;
   margin: 20px 0 0 0;
 }
 
 .work p.txt2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   margin: 50px 0 70px 0;
   font-size: 14px;
@@ -1537,7 +1571,8 @@ SP：main：ワーク
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px 0 150px 0;
+  flex-wrap: wrap;
+  margin: 50px 0 0px 0;
 }
 
 .work_area2_right{
@@ -1546,7 +1581,8 @@ SP：main：ワーク
 }
 
 .work_area2 p.txt3{
-  font-size: 24px;
+  margin: 30px 0 0 0;
+  font-size: 14px;
 }
 
 .work_area2_right_bottom{
@@ -1574,9 +1610,6 @@ SP：main：ピープル
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.people_tittle{
 }
 
 .people_tittle p{
@@ -1618,6 +1651,15 @@ SP：main：ピープル
   margin: 0px 20px 70px 20px;
 }
 
+img.people_img{
+  width: 75px;
+  height: 75px;
+}
+
+a.people_card{
+  text-decoration: none;
+}
+
 .people_txt{
   margin: 0px 0px 0px 20px;
 }
@@ -1628,12 +1670,13 @@ SP：main：ピープル
 }
 
 .people_txt p.txt2{
-  font-size: 14px;
+  font-size: 16px;
   color: #333333;
+  margin: 0 0 10px 0;
 }
 
 .people_txt img{
-  margin: 15px 0px 15px 0px;
+  display: none;
 }
 
 /* ================================================
@@ -1646,7 +1689,7 @@ SP：main：ブログ
   font-family: P22 Pooper Black Pro ;
   font-size: 24px;
   color: #333333;
-  margin: 90px 0 0 0;
+  margin: 0px 0 0 0;
 }
 
 .blog h3{
@@ -1663,6 +1706,7 @@ SP：main：ブログ
   justify-content: center;
   align-items: center;
   margin: 35px auto 35px auto;
+  box-sizing: border-box;
 }
 
 .blog_area{
@@ -1673,24 +1717,40 @@ SP：main：ブログ
 
 a.blog_card{
   text-decoration: none;
-  width: 390px;
+  box-sizing: border-box;
   height: auto;
-  margin: 50px 20px 0 20px;
+
+}
+
+a.blog_card img{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+a.blog_card img.img2{
+  display: none;
 }
 
 .blog_card p.txt1{
   font-size: 16px;
   color: #333333;
-  margin: 15px 0 0 15px;
+  padding: 5px 30px 0px 30px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .blog_card p.txt2{
   font-size: 14px;
-  margin: 15px 0 15px 15px;
+  padding: 5px 30px 35px 30px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .blog_card img.img2{
   padding: 15px 0px 0 15px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ================================================
@@ -1698,16 +1758,24 @@ SP：main：マップ
 ================================================ */
 
 .map{
+  background-image: url(images/map_img.png);
   width: 100%;
-}
-
-.map_txt_area{
+  height: 0px;
+  padding-top: 50%;
+  background-size: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.map_txt{
+.map_txt_area{
+  position: absolute;
+  top: 25%;
+}
+
+a.map_txt_area{
+  text-decoration: none;
 }
 
 .map_txt i{
@@ -1743,52 +1811,71 @@ SP：fooder
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 70px 10% 35px 10%;
+  padding: 40px 15px 35px 15px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ================================================
 SP：fooder：左側
 ================================================ */
 .footer_left{
-  width: 490px;
-  margin: 0 10px 0px 10px;
+  width: 100%;
 }
 
 .h4_txt1{
-  font-size: 42px;
-  margin: 0 0 25px 0;
+  font-size: 30px;
+  margin: 0 0 0px 0;
   color: #333333;
 }
 
-.p_txt2 span{
+.p_txt2{
+  display: none;
   font-size: 18px;
   font-weight: bold;
 }
 
-.footer_left_txt{
-  margin: 30px 0 0 0;
+.footer_left_txt p{
+  margin: 0px 0 0 0;
+  color: #333333;
 }
 
 .footer_left_sns{
-  display: flex;
+  display: none;
   justify-content: flex-start;
   margin: 30px 0 0 0;
 }
 
 .footer_left_sns img{
-  margin: 0px 0 0 20px;
+  width: 100%;
 }
 
 .footer_left_serch{
-  margin: 30px 0 0 0;
+  display: none;
+  width: 100%;
 }
 
 /* ================================================
 SP：fooder：真ん中
 ================================================ */
 .footer_middle{
-  width: 410px;
-  margin: 0 10px 0px 10px;
+  width: 100%;
+  margin: 30px 0 0px 0;
+}
+
+.footer_card{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0px 0px 20px 0px;
+}
+
+.footer_card img{
+  width: 90px;
+}
+
+a.footer_card{
+  text-decoration: none;
 }
 
 .footer_card_txt{
@@ -1797,12 +1884,17 @@ SP：fooder：真ん中
 
 .footer_card_txt p.txt2{
   font-size: 14px;
-  margin: 10px 0 0 0px;
+  margin: 0px 0 0 0px;
+  color: #333333;
+}
+
+p.p_txt2 span{
+  color: #333333;
 }
 
 .h4_txt2{
-  font-size: 14px;
-  margin: 0 0 35px 0;
+  font-size: 30px;
+  margin: 0 0 0px 0;
   color: #333333;
 }
 
@@ -1810,8 +1902,12 @@ SP：fooder：真ん中
 SP：fooder：右側
 ================================================ */
 .footer_right{
-  width: 290px;
-  margin: 0 10px 0px 10px;
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+
+.footer_right img{
+  width: 100%;
 }
 
 .footer_right p{
@@ -1823,23 +1919,6 @@ SP：fooder：右側
   text-decoration: none;
 }
 
-.footer_card{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0px 30px 0px;
-}
-
-a.footer_card{
-  text-decoration: none;
-}
-
-.h4_txt2{
-  font-size: 14px;
-  margin: 0 0 35px 0;
-  color: #333333;
-}
-
 /* ================================================
 SP：fooder：下部
 ================================================ */
@@ -1847,13 +1926,18 @@ SP：fooder：下部
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 30px;
   border-top: 1px solid #999999;;
-  margin: 0px 10%;
+  margin: 0px 15px;
+}
+
+.footer_area2 p{
+  font-size: 11px;
 }
 
 .footer_area2 span{
   color: #f38181;
+  font-size: 11px;
 }
 
 }
