@@ -527,6 +527,38 @@ PC：main：WHAT WE DO
   justify-content: space-between;
 }
 
+.whatwedo_area1_right a{
+  text-decoration: none;
+  border: 1px solid #dbd9d9;
+  padding: 15px 13px;
+}
+
+.whatwedo_area1_right_a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whatwedo_area1_right_a_txt{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.whatwedo_area1_right_a_txt p{
+  margin: 0 0 0 10px;
+}
+
+.whatwedo_area1_right_b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whatwedo_area1_right_b img{
+  margin: 0 0 0 20px;
+}
+
 .whatwedo_area2{
   display: flex;
   justify-content: center;
@@ -997,8 +1029,15 @@ PC：fooder：真ん中
 PC：fooder：右側
 ================================================ */
 .footer_right{
-  width: 290px;
+  width: 333px;
   margin: 0 10px 0px 10px;
+}
+
+.footer_right ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .footer_right p{
@@ -1035,7 +1074,7 @@ PC：fooder：下部
   justify-content: center;
   align-items: center;
   height: 60px;
-  border-top: 1px solid #999999;;
+  border-top: 1px solid #999999;
   margin: 0px 10%;
 }
 
@@ -1825,7 +1864,7 @@ SP：fooder：左側
 
 .h4_txt1{
   font-size: 30px;
-  margin: 0 0 0px 0;
+  margin: 0 0 10px 0;
   color: #333333;
 }
 
@@ -1894,7 +1933,7 @@ p.p_txt2 span{
 
 .h4_txt2{
   font-size: 30px;
-  margin: 0 0 0px 0;
+  margin: 0 0 10px 0;
   color: #333333;
 }
 
@@ -1906,9 +1945,17 @@ SP：fooder：右側
   margin: 30px 0 0 0;
 }
 
-.footer_right img{
-  width: 100%;
+.footer_right ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
 }
+
+.footer_right li a{
+  list-style: none;
+}
+
 
 .footer_right p{
   font-size: 14px;
@@ -1927,7 +1974,7 @@ SP：fooder：下部
   justify-content: center;
   align-items: center;
   height: 30px;
-  border-top: 1px solid #999999;;
+  border-top: 1px solid #999999;
   margin: 0px 15px;
 }
 
