@@ -113,14 +113,74 @@ input, select {
 /* ================================================
 PC：header 
 ================================================ */
+.header_sp{
+  display: none;
+}
+
+.header_sp_menu{
+  display: none;
+}
+
+.header{
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header h1{
+  font-size: 40px;
+  color: #333333;
+}
+
+.header ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 45%;
+}
+
+.header li a{
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+  position: relative;
+}
+
+.header li i{
+  color: #333333;
+}
+
+.header li a::after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #333333;
+  transition: all 0.3s ease 0s;
+}
+
+.header li a:hover {
+  cursor: pointer;
+}
+
+.header li a:hover::after {
+  width: 100%;
+}
 
 /* ================================================
 PC：main：イメージ
 ================================================ */
 .main_image{
   background-image: url(images/main_image.png);
-  top: 0px;
-  position: fixed;
   width: 100%;
   height: 0px;
   padding-top: 52.1%;
@@ -130,6 +190,7 @@ PC：main：イメージ
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 70px 0 0 0;
 }
 
 /* ================================================
@@ -144,55 +205,12 @@ PC：main：イメージ：ヘッダー
   top: 3%;
 }
 
-.main_header h1{
-  color: #ffffff;
-  font-size: 30px;
-}
-
-.main_header ul{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  width: 45%;
-}
-
-.main_header li a{
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 14px;
-  position: relative;
-}
-
-.main_header li i{
-  color: #ffffff;
-}
-
-.main_header li a::after {
-  position: absolute;
-  content: '';
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #ffffff;
-  transition: all 0.3s ease 0s;
-}
-
-.main_header li a:hover {
-  cursor: pointer;
-}
-
-.main_header li a:hover::after {
-  width: 100%;
-}
-
 /* ================================================
 PC：main：イメージ：テキスト
 ================================================ */
 .main_image_txt{
   position: absolute;
-  top: 21%;
+  top: 10%;
 }
 
 .main_image_txt p{
@@ -233,7 +251,7 @@ text-decoration: none;
 
 .main_image_bottom{
   position: absolute;
-  top: 93%;
+  top: 86%;
 }
 
 .main_image_bottom ul{
@@ -519,44 +537,106 @@ PC：main：WHAT WE DO
   margin: 60px 0 0 0;
 }
 
+.whatwedo_area1_left_img{
+  width: 40%;
+  height: 380px;
+}
+
 .whatwedo_area1_right{
   width: 600px;
   margin: 0 0 0 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .whatwedo_area1_right a{
   text-decoration: none;
-  border: 1px solid #dbd9d9;
-  padding: 15px 13px;
 }
 
-.whatwedo_area1_right_a {
+.whatwedo_area1_right_a_1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid #dbd9d9;
+  padding: 15px 13px;
+  position: relative;
+  width: 95%;
+  height: 35px;
 }
 
-.whatwedo_area1_right_a_txt{
+.whatwedo_area1_right_a_2 , .whatwedo_area1_right_a_3  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 1px solid #dbd9d9;
+  border-right: 1px solid #dbd9d9;
+  border-bottom: 1px solid #dbd9d9;
+  padding: 15px 13px;
+  position: relative;
+  width: 95%;
+  height: 35px;
+}
+
+.whatwedo_area1_right_a_1_txt , .whatwedo_area1_right_a_2_txt , .whatwedo_area1_right_a_3_txt{
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.whatwedo_area1_right_a_txt p{
+.whatwedo_area1_right_a_1_txt p , .whatwedo_area1_right_a_2_txt p , .whatwedo_area1_right_a_3_txt p{
   margin: 0 0 0 10px;
+}
+
+.whatwedo_area1_right_a_1_txt ::after , .whatwedo_area1_right_a_2_txt ::after ,.whatwedo_area1_right_a_3_txt ::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f055";
+  font-size: 16px;
+  color: #c9c9c9;
+  position: absolute;
+  right: 20px;
+}
+
+.whatwedo_area1_right_a_1_txt.active::after , .whatwedo_area1_right_a_2_txt.active::after ,.whatwedo_area1_right_a_3_txt.active::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f056";
+  font-size: 16px;
+  color: #c9c9c9;
+  position: absolute;
+  right: 20px;
 }
 
 .whatwedo_area1_right_b {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  overflow-y: scroll;
+  width: 95%;
+  height: 150px;
+  border-left: 1px solid #dbd9d9;
+  border-right: 1px solid #dbd9d9;
+  border-bottom: 1px solid #dbd9d9;
+  padding: 15px 13px;
+  display: none;
 }
 
-.whatwedo_area1_right_b img{
-  margin: 0 0 0 20px;
+.whatwedo_area1_right_b::-webkit-scrollbar{ 
+  width: 10px;
+  padding: 0 5px 0 0;
+}
+
+.whatwedo_area1_right_b::-webkit-scrollbar-thumb{ 
+  background: #95e1d3;
+}
+
+.whatwedo_area1_right_b::-webkit-scrollbar-track-piece:start{
+  background: #f1f1f1;
+}
+
+.whatwedo_area1_right_b::-webkit-scrollbar-track-piece:end{
+  background: #f1f1f1;
 }
 
 .whatwedo_area2{
@@ -1093,6 +1173,79 @@ PC：fooder：下部
 /* ================================================
 SP：header 
 ================================================ */
+.header{
+  display: none;
+}
+
+.header_sp{
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  z-index: 1000;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_sp h1{
+  color: #333333;
+  font-size: 25px;
+}
+
+.header_sp a{
+  text-decoration: none;
+  color: #333333;
+  font-size: 14px;
+  margin: 0 0 0 6px;
+}
+
+.header_sp i{
+  text-decoration: none;
+  color: #333333;
+  font-size: 14px;
+}
+
+.header_sp_menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #555;
+}
+
+/* アニメーション前のメニューの状態 */
+.header_sp_menu{
+  transform: translateX(100vw);
+  transition: all .3s linear;
+}
+
+/* アニメーション後のメニューの状態 */
+.header_sp_menu.is_active{
+  transform: translateX(0);
+}
+
+.header_sp_menu a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.menu_item{
+  width: 100%;
+  height: auto;
+  padding: 18px 0;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
 
 /* ================================================
 SP：main：イメージ
@@ -1115,43 +1268,16 @@ SP：main：イメージ
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 45px 0 0 0;
 }
 
-/* ================================================
-SP：main：イメージ：ヘッダー
-================================================ */
-.main_header_sp{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  position: absolute;
-  top: 3%;
-}
-
-.main_header_sp h1{
-  color: #ffffff;
-  font-size: 25px;
-}
-
-.main_header_sp a{
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 14px;
-}
-
-.main_header_sp i{
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 14px;
-}
 
 /* ================================================
 SP：main：イメージ：テキスト
 ================================================ */
 .main_image_txt_sp{
   position: absolute;
-  top: 32%;
+  top: 29%;
 }
 
 .main_image_txt_sp p{
